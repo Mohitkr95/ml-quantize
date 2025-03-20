@@ -1,3 +1,4 @@
 env
 .vscode
-model_comparison
+original
+quantized
