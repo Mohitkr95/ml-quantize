@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml-quantize"
+version = "0.1.0"
+description = "Easily quantize any machine learning model from Hugging Face with just a few lines of code"
+readme = "README.md"
+authors = [
+    {name = "Mohit Kumar", email = "your-email@example.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "optimum>=1.10.0",
+    "accelerate>=0.20.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/ml-quantize"
+"Bug Tracker" = "https://github.com/yourusername/ml-quantize/issues"
+
+[tool.setuptools]
+packages = ["ml_quantize"] 
